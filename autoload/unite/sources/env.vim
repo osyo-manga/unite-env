@@ -1,4 +1,5 @@
-
+" unite で環境変数の列挙を行います
+" WindowsXP でのみ動作確認
 function! s:env_command()
     if has("win16") || has("win32") || has("win64")
         return "set"
