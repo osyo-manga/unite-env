@@ -23,7 +23,7 @@ function! s:source.gather_candidates(args, context)"{{{
         \ "word" : v:val,
         \ "source" : "env",
         \ "kind" : "directory",
-        \ "action__path" : split(v:val, "=")[1],
+        \ "action__path" : v:val[stridx(v:val, "=")+1 : -1],
         \ }')
 endfunction"}}}
 
